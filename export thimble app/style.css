@@ -1,0 +1,103 @@
+/*to prevent the background image from tiling we need to set both html and body to be 100% high */
+html{
+  background-image: url(https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=42689ecb42b1d503e16a9d8764cb8385);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color:white;
+  background-position:bottom;
+  text-align:center;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  margin: auto;
+  align-content: center;
+  text-align-last: center;
+    
+}
+img{
+  width: 40%;
+  margin:auto;
+  display:block;
+  
+}
+/* change the colour of the a element*/
+a{color: #2e170c;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+    }
+
+button{
+  font-size: 90%;
+  background:black;
+  color:aliceblue;
+  border:orange;
+ cursor: pointer;
+  border-radius: 25px;
+  margin: 20px auto;
+padding: 17px; 
+  display: block;
+  transition: 0.6s;
+}
+button:hover
+{
+color:white;
+
+}
+select {
+background-color:currentColor'
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+  font-size:100%;
+  margin: 25px auto;
+  display:block;
+  max-width: 300px;
+  margin:auto;
+  
+} 
+select
+{
+ 
+  padding:6px;
+  
+}
+
+ul{
+  /*remove the bullet points*/
+  list-style: none;
+}
+li img {
+  max-width: 100px;
+  border-radius:0px;
+  float:right;
+  margin-right:20px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  
+  
+}
+
+li{
+  background-color:transparent;
+ padding: 10px;
+  margin-bottom: 20px;
+  margin-right:40px;
+  min-height:140px;
+  text-align:center;
+  color:yellow;
+}
+
+
+
+
+
+
+
+  
+  
+
+  
+
