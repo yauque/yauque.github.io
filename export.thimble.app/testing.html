@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>export thimble app guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Publish <a href="https://thimble.mozilla.org/en-US/" title="thimble online code editor">Thimble</a> project and hosted by GitHub (desktop installation)</h1>
+<p><em>(NB: Github web hosting supports client side webpages eg. HTML, CSS, Javascript (including Jquery) and does not support server side webpages eg. PHP)</em></p>
+<p><em>A beginner's guide from a beginner's view:</em><br> 
+(descriptions are written before screenshots)</p>
+<hr />
+<p><br> 
+<br></p>
+<h4><a href="#sectionOne">Section One</a>: Publish thimble project folder to Github for hosting</h4>
+<h4><a href="#sectionTwo">Section Two</a>: Cloning repo (including thimble project) from Github to pc</h4>
+<p>(make changes to webpages on local pc)</p>
+<h4><a href="#sectionThree">Section Three</a>: Ways to host website's images</h4>
+<h4><a href="#sectionFour">Section Four</a>: using <a href="https://www.firebase.com">Firebase</a> Export and Import JSON button to change data entries</h4>
+<h4><a href="#sectionFive">Section Five</a>: Links to Setting up custom domain name and other publishing options</h4>
+<p><br><a name="sectionOne"></a></p>
+<h2><strong><em>Section 1:</em></strong></h2>
+<ul>
+<li>Let's begin!<br>
+Export Thimble project.zip file to your PC and rename folder name if you like.  My exported file has been renamed as <strong>export.thimble.app</strong></li>
+</ul>
+<p><img src="http://i.imgur.com/bL0Mqxq.png" /></p>
+<hr />
+<p><br><br></p>
+<ul>
+<li>Next let's navigate to GitHub and <a href="https://github.com/join?source=header-home">sign up</a> for a <strong>GitHub account</strong>.  <br> Choose <strong>Unlimited public repositories for free</strong>, disregard <strong>Help me set up an organization next</strong>. We will need to verify our email address with GitHub. 
+<br><br>
+<img src="http://i.imgur.com/m70KASy.png" /></li>
+</ul>
+<p><center><img src="http://i.imgur.com/5j9zZ01.png" /></center></p>
+<hr />
+<p><br><br></p>
+<ul>
+<li>Now move to <a href="https://desktop.github.com/">GitHub desktop software</a> and download it (Available for Windows / Mac). Execute downloaded file: <strong>GitHubSetup.exe</strong> and start the installation process . <br> Worth noting is without software preinstalled in pc, we can create repository but cannnot upload thimble folder to GitHub's repo , and GitHub UPLOAD interface will not appear on web browser.<br>In another words, software is the bridge between local pc and GitHub. Repository (repo) is a storage place we use to store the thimble project, the use of repo will be described later in this guide. Installed software will now prompt us to clone a repo, I will just cancel this pop up alert but configure Account Settings under OPTIONS Tab. (software's account settings using created Github account's username and password)  <br> After finishing this, we can leave this software open or close and move back to <a href="https://github.com/">GitHub</a> website. </li>
+</ul>
+<p><br>
+<img src="http://i.imgur.com/OJAYHN5.png" />
+<center><img src="http://i.imgur.com/g0AxnxJ.png" /></center></p>
+<hr />
+<p><br><br></p>
+<ul>
+<li>Going back to Github website, after signing into pre-created Github account, press New repository to create a repo to store the thimble project folder. 
+Next give Repo a name with below format, the <strong>username</strong> have to be your own <a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub username</a> or GitHub webpages will not be built. User webpages can be built by any user account with a verified email address. Tick the box <code>Initialize this repo with a README</code>
+README file is used to give readers a snapshot about what's going on in a project. </li>
+</ul>
+<p><br> </p>
+<pre><code>yourusername.github.io 
+</code></pre>
+
+<p><img src="http://i.imgur.com/VfDd5SW.png" />
+<img src="http://i.imgur.com/1ZJ3Mxf.png" /></p>
+<p><br></p>
+<p><a name="sectionOne"></a>
+- Press <strong>upload</strong> under newly created repo, <br> <code>yourusername/yourusername.github.io</code>  and drag the thimble project folder there.
+Commit directly to the <strong><em>master</em></strong> branch. <br>Press 
+<strong>Commit Change</strong>. eg; thimble project: <em><code>export.thimble.app</code></em> is now under repo, make sure <code>index.html</code> file is present, otherwise, webpages will not be built and appear on web browser. Image files eg. jpeg, png files also included.  eg:<strong><em>yourlogo.png</em></strong> <br>
+Images that hosted externally comes with an URL link, begins with 
+<code>Http://</code> <br>
+More details about image hosting please refer to <strong>Section 2.</strong> </p>
+<p><img src="http://i.imgur.com/CeWNJHh.png" /></p>
+<hr />
+<ul>
+<li>All uploaded file will be located inside in my case: export.thimble.app folder. <br>And my webpages are now published publicly and hosted by Github.<br>
+To browse website hosted by Github, type below URL in browser address bar:</li>
+</ul>
+<blockquote>
+<p>Your website: http://yourusername.github.io/yourprojectfolder
+<br>My published website: <a href="http://yauque.github.io/export.thimble.app">http://yauque.github.io/export.thimble.app</a></p>
+</blockquote>
+<p><br>
+<img src="http://i.imgur.com/pbpTOBA.png" />
+<br><br></p>
+<hr />
+<ul>
+<li>Below table to recap the steps from creating a repo to publishing site on the web: </li>
+</ul>
+<table>
+	<tr>
+		<th id="c1">Inside 'yourusername'</th>
+		<th id="c2">Inside 'repository'</th>
+		<th id="c3">Inside thimble project folder</th>
+        <th id="c4">Visit http://yourusername.github.io/thimbleprojectfolder</th>
+	<tr>
+		<td headers="c1">repository</td>
+		<td headers="c2">thimble project folder</td>
+		<td headers="c3">project files including index.html</td>
+        <td headers="c4">see your built website online :)</td>
+	</tr>
+</table>
+<p><br> <strong>Website is now published and is publicly seen !</strong>  <br> <br>Next Section we will move on to clone repo to pc, cloning is necessary if need to make changes to webpages in future, so that we can synchronise webpages or other relevant files between our pc with Github website using GitHub software client. As far as I know, new files can only be created on GitHub website<br></p>
+<p>Section 3 and 4 will move on to image hosting and changing images' links on webpages and (Firebase data changes - if Firebase database is used along with website) </p>
+<p>Section 5 include links to assign custom domain name to GitHub hosted site ,other options to publish website without GitHub and create realtime app using Firebase tutorial.</p>
+<p><br><br>
+<a name="sectionTwo"></a></p>
+<h2><strong><em>Section 2:</em></strong></h2>
+<h3>Cloning repo (including thimble project) from Github to your pc</h3>
+<h4><strong>Make changes on webpages on local pc</strong></h4>
+<ul>
+<li>
+<p>We do this by cloning repo <code>yourusername/yourusername.github.io</code> using <a href="https://desktop.github.com">Github software client</a>. <br></p>
+</li>
+<li>
+<p>Open software, go to <strong>Clone</strong> and start cloning (copying) repo,  <strong>yourusername.github.io</strong> to pc and save it to a folder you like. Software will start prompting you to log in if you have not done it yet. <br>
+Log in with same username and password created for Github account. <br>
+After cloning we will see the thimble project folder and we can modify the contents inside these files before publishing and syncing them with the thimble project folder located on Github's website. <br>
+There are many synchronisations we may already be using, to name one, eg; <br> Syncing emails between our tablets, mobile phones and laptops. <br> </p>
+</li>
+</ul>
+<p><img src="http://i.imgur.com/qloJIYX.png" />    </p>
+<hr />
+<p><img src="http://i.imgur.com/9RRE3FK.png" /></p>
+<hr />
+<p><br><br>
+<a name="sectionThree"></a></p>
+<h2><em>Section 3:</em></h2>
+<h3>Ways to host our website images</h3>
+<hr />
+<ul>
+<li>
+<p>We can include images (eg jpeg, png files) inside our uploaded thimble project folder. We may also have other images with URL links embedded inside our web scripts that are hosted externally by others but we do not own the images. </p>
+</li>
+<li>
+<p>We can also use external image hosting service to host images.
+eg: <a href="http://imgur.com">imgur</a> <br>
+Any changes to image paths will need to be changed on web scripts or firebase database when required. <br></p>
+</li>
+</ul>
+<hr />
+<p><br>
+<a name="sectionFour"></a></p>
+<h2><em>Section 4:</em> using Firebase Import and Import JSON button to change data</h2>
+<p><strong><em>(this section is for Website with a Firebase database)</em></strong><br><br></p>
+<p>Data added in Firebase database is named as JSON Object.</p>
+<p>When we only have a few data entries inside our Firebase database, we can manually amend them 1 by 1 using <strong>+ and X button</strong> inside our firebase interface on web browser. <br>
+<img src="http://i.imgur.com/Y43QCx9.png" /></p>
+<p>But if we have many data entries, this can be a tedious task, we can make use <strong>Export as JSON and Import as JSON button</strong> to help us make these changes a lot quicker.  We are not adding new data entries but changing existing data entries.</p>
+<p><img src="http://i.imgur.com/1LO4J1p.png" /></p>
+<p>After signing into Firebase, opens the app database,  <strong>Export Data as JSON</strong> and save it to pc, modify data with a text editor, save it and <strong>Import Data as JSON</strong> back to Firebase database.And it's done.<br></p>
+<p>Exported JSON files can be opened with 
+ <strong>text editor</strong> that supports <strong>.JSON extension file</strong>. 
+Eg. <a href="http://brackets.io">Brackets</a> (Windows and Mac supported), <a href="https://notepad-plus-plus.org">Notepad++</a> (Windows only)
+<br> Alternatively, we can also use a JSON online text editor to open the file, modify data and download it back to our pc.
+eg. <a href="http://www.jsoneditoronline.org">Json editor online</a></p>
+<p>With this free Json online editor, individual data entries under each JSON object can be amended on left or right hand column. Eg On LHS, for TRUE or FALSE entry, I can type FALSE to replace TRUE. On RHS, I can simply tick for True and untick the box to make it False. </p>
+<p><img src="http://i.imgur.com/GtU1bZr.png" /></p>
+<hr />
+<p><a name="sectionFive"></a></p>
+<h2>Section 5: More links</h2>
+<p><br><br></p>
+<h4>Setting up custom domain name to Github pages:</h4>
+<p><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">https://help.github.com/articles/using-a-custom-domain-with-github-pages</a><br>
+<a href="https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/">https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/</a></p>
+<p><strong>More other options to publish website without GitHub:</strong></p>
+<p><a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/Publishing_your_website">https://developer.mozilla.org/en-US/Learn/Getting<em>started</em>with<em>the<em>web/Publishing</em>your</em>website</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
