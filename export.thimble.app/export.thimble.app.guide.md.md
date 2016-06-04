@@ -116,7 +116,7 @@ To browse website hosted by Github, type below URL in browser address bar:
 	</tr>
 </table>
 
-<br> **Website is now published and is publicly seen !**  <br> <br>Next Section we will move on to clone repo to pc, cloning is necessary if need to make changes to webpages in future, so that we can synchronise webpages or other relevant files between our pc with Github website using GitHub software client. As far as I know, new files can only be created on GitHub website<br>
+<br> **Website is now published and is publicly seen !**  <br> <br>Next Section we will move on to clone repo to pc, cloning is necessary if need to make changes to webpages in future, so that we can synchronise webpages or other relevant files between our pc with Github website using GitHub software client.<br>
 
 Section 3 and 4 will move on to image hosting and changing images' links on webpages and (Firebase data changes - if Firebase database is used along with website) 
 
