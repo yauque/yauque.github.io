@@ -121,7 +121,7 @@ To browse website hosted by Github, type below URL in browser address bar:
 Section 3 and 4 will move on to image hosting and changing images' links on webpages and (Firebase data changes - if Firebase database is used along with website) 
 
 
-Section 5 include links to assign custom domain name to GitHub hosted site ,other options to publish website without GitHub and create realtime app using Firebase tutorial.
+Section 5 include links to assign custom domain name to GitHub hosted site ,other options to publish website without GitHub.
 
 <br><br>
 <a name="sectionTwo"></a>
