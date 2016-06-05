@@ -80,10 +80,10 @@ More details about image hosting please refer to **Section 2.**
 ----------
 
 
-- All uploaded file will be located inside in my case: export.thimble.app folder. <br>And my webpages are now published publicly and hosted by Github.<br>
+- All my uploaded file will be located inside: export.thimble.app folder. <br>And my webpages are now published publicly and hosted by Github.<br>
 To browse website hosted by Github, type below URL in browser address bar:
 
->Your website: http://yourusername.github.io/yourprojectfolder
+>Your website: http:// yourusername.github.io/yourprojectfolder
 ><br>My published website: [http://yauque.github.io/export.thimble.app](http://yauque.github.io/export.thimble.app)
 
 <br>
@@ -107,7 +107,7 @@ To browse website hosted by Github, type below URL in browser address bar:
 		<th id="c1">Inside 'yourusername'</th>
 		<th id="c2">Inside 'repository'</th>
 		<th id="c3">Inside thimble project folder</th>
-        <th id="c4">Visit http:// yourusername.github.io/thimbleprojectfolder</th>
+        <th id="c4">Visit http://yourusername.github.io/thimbleprojectfolder</th>
 	<tr>
 		<td headers="c1">repository</td>
 		<td headers="c2">thimble project folder</td>
