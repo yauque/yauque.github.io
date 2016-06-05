@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Firebase Pusher</title>
+    <link rel="stylesheet" href="style.css">
+      
+  </head>
+
+  <body>
+
+    <h2>Firebase Pusher</h2>
+
+    <p>
+      Use this form to <b>push data</b> for a <code>person</code> to our Firebase database.  
+    </p>
+
+    <h3>
+      If you're remixing this:
+    </h3>
+    <ol>
+      <li>In <code>app.js</code> change <code>databaseURL</code> so that it points to your own Firebase.</li>
+      <li>In <code>index.html</code> edit the <code>form</code> below, in particular change all the <code>name</code> attributes for your fields to reflect the data you want to store in Firebase. For instance, change <code>&lt;input name="codingSkills" ...</code> to <code>&lt;input name="YOUR_VARIABLE_NAME" ...</code></li>
+    </ol>
+
+    <h3>
+      And here's the form
+    </h3>
+    <form action="" method="post">
+      <p>
+       Online Tutoring Website <b>Name</b> <input name="name" type="text" placeholder="e.g. Billie">  
+      </p>
+      <p>
+      company founded under 2 year?
+        <input name="lessthantwoyears" type="number" min="0" max="1" placeholder="e.g. 18">  
+      </p>
+      <p>
+      company founded 2 years or above ? <input name="twoyearsormore" type="number" min="2" max="120" placeholder="e.g. 18">  
+      </p>
+      <p>
+      
+        Does your company offer FREE TRAIL LESSONS?<br><input type="checkbox" value="true" name="skype"> Yes
+      </p>
+     
+      <p>
+           
+      Subject levels:
+        <br><input type="radio" name="GCSE" value="true">GCSE<br>
+        <input type="radio" name="A Levels" value="true">A Levels<br>
+        <input type="radio" name="International Baccalaureate" value="true">International Baccalaureate<br>
+        <input type="radio" name="Undergraduate" value="true">Undergraduate<br>
+        <input type="radio" name="Postgraduate" value="true">Postgraduate<br>
+        <input type="radio" name="Others" value="true">Others<br>
+             </p>
+      <p>
+       Do you offer tutoring via skype? <br><input type="checkbox" value="true" name="skype"> Yes
+      </p>
+          
+      <p>
+        . How likely you will develop your own tutoring platform? (0 is unlikely, 5 is likely)? <input name="howlikely" type="number" min="0" max="5">
+        </p>
+      
+         
+        
+      <p>
+        Is your business registered with <b>Tutor's Association </b>? <input type="checkbox" value="true" name="tutorassociation"> Yes
+      </p>
+    
+      <p>
+        Are all your tutors (DBS or formally called CRB checked)?<input type="checkbox" value="true" name="DBS"> Yes
+      </p>
+                <p>
+                  Adopted online child safeguarding policy: <textarea name="about"></textarea> 
+      </p>
+      <p>
+        Have ethnical business practice?                   <input type="checkbox" value="true" name="DBS"> Yes 
+
+      </p>
+                 
+               <p>
+        Your <b>company</b> logo:
+        <input name="image" type="url">  
+    </p>
+    
+               <p>
+        <button type="submit">Push it!</button>
+      </p>
+      
+    </form>
+
+    <!-- LOAD JS after everything else -->
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery.getFormData.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
