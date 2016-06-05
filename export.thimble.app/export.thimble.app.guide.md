@@ -107,7 +107,7 @@ To browse website hosted by Github, type below URL in browser address bar:
 		<th id="c1">Inside 'yourusername'</th>
 		<th id="c2">Inside 'repository'</th>
 		<th id="c3">Inside thimble project folder</th>
-        <th id="c4">Visit http://yourusername.github.io/thimbleprojectfolder</th>
+        <th id="c4">Visit http:// yourusername.github.io/thimbleprojectfolder</th>
 	<tr>
 		<td headers="c1">repository</td>
 		<td headers="c2">thimble project folder</td>
