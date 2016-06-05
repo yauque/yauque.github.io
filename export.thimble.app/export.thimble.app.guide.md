@@ -22,7 +22,7 @@
 
 
 - Let's begin!<br>
-Export Thimble project.zip file to your PC and rename folder name if you like.  My exported file has been renamed as **export.thimble.app**
+Export Thimble project.zip file to your PC and rename folder name if you like.  I have renamed mine as **export.thimble.app**
  
 ![](http://i.imgur.com/bL0Mqxq.png)
 
@@ -128,7 +128,7 @@ Section 5 include links to assign custom domain name to GitHub hosted site ,othe
 ***Section 2:***
 ----------------
 ### Cloning repo (including thimble project) from Github to your pc
-#### **Make changes on webpages on local pc** ####
+#### **Make changes to webpages ** ####
 
 
 
